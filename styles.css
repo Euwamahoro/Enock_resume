@@ -24,3 +24,23 @@ header {
     justify-content: center;
     margin: 15px;
 }
+.main-div {
+    margin-top: 15px;
+    justify-content: center;
+    justify-items: center;
+}
+
+#personal-ethos {
+    justify-content: center;
+    margin: 20px;
+    height: 200px;
+    font-size: 18px;
+}
+#personal-ethos p{
+    justify-content: center;
+    font-size:large;
+    margin: 10px;
+    display: flex;
+    text-align: justify;
+    margin-top: 50px;
+}
