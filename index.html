@@ -3,25 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <!-- Here we will add the navigation bar to help the user interact with our web easily -->
         <div class="nav-bar">
-            <h3><a href="/sub-html/skills.html">Skills</a></h3>
-            <h3><a href="/sub-html/work-epx.html">Work Experience</a></h3>
-            <h3><a href="/sub-html/edu.html">Education</a></h3>
-            <h3><a href="/sub-html/project.html">Projects</a></h3>
-            <h3><a href="/sub-html/contact.html">Contact</a></h3>
+            <h3><a href="#skills">Skills</a></h3>
+            <h3><a href="#work-exp">Work Experience</a></h3>
+            <h3><a href="#edu">Education</a></h3>
+            <h3><a href="#project">Projects</a></h3>
+            <h3><a href="#contact">Contact</a></h3>
         </div>
     </header>
     <main class="main-div">
-        <!-- Here I will add the rest of the content of my website -->
-         <section id="personal-ethos">
+        <section id="personal-ethos">
             <p id="typing-text"></p>
+        </section>
+
+        <!-- Add more sections below with corresponding IDs -->
+        <section id="skills">
+            <!-- Skills content goes here -->
+            <h1>My Skills</h1>
+
+    <div class="skill">
+        <i class="fab fa-python"></i> Python
+    </div>
+
+    <div class="skill">
+        <i class="fab fa-python"></i> Django
+    </div>
+
+    <div class="skill">
+        <i class="fab fa-js"></i> JavaScript
+    </div>
+
+    <div class="skill">
+        <i class="fab fa-node-js"></i> Node.js
+    </div>
+
+    <div class="skill">
+        <i class="fab fa-angular"></i> Angular
+    </div>
+
+    <div class="skill">
+        <i class="fas fa-code"></i> C
+    </div>
+
+    <div class="skill">
+        <i class="fab fa-html5"></i> HTML5
+    </div>
+
+    <div class="skill">
+        <i class="fab fa-css3"></i> CSS
+    </div>
+</div>
+
+
+        </section>
+
+        <section id="work-exp">
+            <!-- Work Experience content goes here -->
+            <article class="experience">
+                <h2>Customer Support Officer Supervisor</h2>
+                <p class="company">BIRAS LTD - Delivery Services</p>
+                <p class="date">Your Start Date - Your End Date (if applicable)</p>
+                <ul>
+                    <li>Managed and supervised a team of customer support officers</li>
+                    <li>Ensured timely and efficient resolution of customer inquiries and issues</li>
+                    <li>Collaborated with other departments to improve overall service quality</li>
+                    <!-- Add more bullet points highlighting your achievements and responsibilities -->
+                </ul>
+            </article>
+        </section>
+
+        <section id="edu">
+            <!-- Education content goes here -->
+            <article class="education">
+                <h2>G.S Kimisagara</h2>
+                <p class="date">2008 - 2014</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+                <a href="#" class="school-link" target="_blank">Learn more</a>
+            </article>
+        
+            <article class="education">
+                <h2>ESSI-Nyamirambo (O'Level)</h2>
+                <p class="date">2015 - 2017</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+                <a href="#" class="school-link" target="_blank">Learn more</a>
+            </article>
+        
+            <article class="education">
+                <h2>Rilima Secondary School (2018)</h2>
+                <p class="date">One Trimester</p>
+                <p class="description">Studied Math, Physics, and Chemistry.</p>
+                <!-- Add image and link for the school -->
+                <div class="school-image" style="background-image: url('school_images/rilima_school.jpg');"></div>
+                <a href="#" class="school-link" target="_blank">Learn more</a>
+            </article>
+        
+            <article class="education">
+                <h2>ESSI-Nyamirambo (2018 - 2020)</h2>
+                <p class="description">Studied Mathematics, Physics, and Geography.</p>
+                <a href="#" class="school-link" target="_blank">Learn more</a>
+            </article>
+        
+            <article class="education">
+                <h2>African Leadership University</h2>
+                <p class="date">2023 - Present</p>
+                <p class="description">Enrolled in Software Engineering seeking a bachelor's degree for 4 years.</p>
+                <a href="#" class="school-link" target="_blank">Learn more</a>
+            </article>
+        
+            <article class="education">
+                <h2>ALX Bootcamp</h2>
+                <p class="date">July 2023 - Present</p>
+                <p class="description">Enrolled as a Software Engineer.</p>
+                <a href="#" class="school-link" target="_blank">Learn more</a>
+            </article>
+        
+        </section>
+
+        <section id="project">
+            <!-- Projects content goes here -->
+            <section id="beginner-projects">
+                <h2>Beginner Projects</h2>
+                <ul>
+                    <li><a href="https://uwamahoro-enock.github.io/odin-recipes/" target="_blank">Odin Recipes</a></li>
+                    <li><a href="https://uwamahoro-enock.github.io/Rock-paper-scissors/" target="_blank">Rock, Paper, Scissors</a></li>
+                </ul>
+            </section>
+            
+            <section id="intermediate-projects">
+                <h2>Intermediate Projects</h2>
+                <ul>
+                    <li><a href="https://euwamahoro.github.io/Calculator/" target="_blank">Calculator</a></li>
+                    <!-- Placeholder for the third intermediate project -->
+                    <li><a href="#" target="_blank">Project 3 (Coming Soon)</a></li>
+                </ul>
+            </section>
+            
+            <section id="professional-projects">
+                <h2>Professional Projects</h2>
+                <!-- Placeholder for professional projects -->
+            </section>
+            
+        </section>
+
+        <section id="contact">
+            <!-- Contact content goes here -->
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +250786291710</p>
+                <p><strong>Email:</strong> <a href="mailto:e.uwamahoro@alustudent.com">e.uwamahoro@alustudent.com</a></p>
+                <p><strong>Professional Email:</strong> <a href="mailto:enockdev01@gmail.com">enockdev01@gmail.com</a></p>
+            </div>
+        
+            <div class="social-icons">
+                <a href="https://www.instagram.com/your_username" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/your_username" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/your_username" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        
+            <div class="profile-image">
+                <img src="imgs/your_image.jpg" alt="Your Name">
+            </div>
         </section>
     </main>
     <script src="script.js"></script>
