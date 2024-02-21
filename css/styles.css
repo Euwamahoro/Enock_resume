@@ -1,7 +1,9 @@
+/* Default styles for all screens */
 a {
     text-decoration: none;
     color: aliceblue;
 }
+
 body {
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
@@ -11,12 +13,14 @@ body {
     margin: 0;
     height: 100vh;
 }
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 header {
     border: 2px solid;
     font-size: 14px;
@@ -25,6 +29,7 @@ header {
     justify-content: center;
     margin: 15px;
 }
+
 .main-div {
     margin-top: 15px;
     justify-content: center;
@@ -37,9 +42,10 @@ header {
     height: 200px;
     font-size: 18px;
 }
-#personal-ethos p{
+
+#personal-ethos p {
     justify-content: center;
-    font-size:large;
+    font-size: large;
     margin: 10px;
     display: flex;
     text-align: justify;
@@ -47,4 +53,19 @@ header {
     text-align: left;
     white-space: pre-line;
     margin-top: 25%;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #personal-ethos {
+        height: auto;
+    }
+
+    #personal-ethos p {
+        margin-top: 10%;
+    }
 }
