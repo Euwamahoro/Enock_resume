@@ -1,133 +1,82 @@
-/* Default styles for all screens */
-a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
+/* Default styles */
 body {
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-    background-color: black;
-    padding: 0;
+    font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    height: max-content;
 }
 
-.nav-bar {
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    margin: 10px;
 }
 
-header {
-    border: 2px solid;
-    font-size: 18px;
-    border-radius: 20px;
-    width: auto;
-    justify-content: center;
-    margin: 15px;
-    text-align: center; /* Center text in the header */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.main-div {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column; /* Stack main sections vertically */
-    align-items: center; /* Center align content in main-div */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-#personal-ethos {
-    text-align: center; /* Center text in personal-ethos */
-    margin: 20px;
-    font-size: 18px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-#personal-ethos p {
-    font-size: large;
-    margin: 10px;
-    text-align: justify;
-    white-space: pre-line;
+h1 {
+    text-align: center;
+    margin-top: 15%;
 }
 
-/* Skills Section */
-#skills {
-    text-align: center; /* Center text in the skills section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.skill {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-}
-
-.skill i {
-    margin-right: 5px;
-}
-
-/* Work Experience Section */
-#work-exp {
-    text-align: center; /* Center text in the work experience section */
-}
-
-.experience {
-    text-align: left; /* Align experience details to the left */
-    margin: 20px;
-}
-
-/* Education Section */
-#edu {
-    text-align: center; /* Center text in the education section */
-}
-
-.education {
-    text-align: left; /* Align education details to the left */
-    margin: 20px;
-}
-
-.school-image {
-    background-size: cover;
-    height: 150px; /* Adjust the height of the school image */
-    margin-top: 10px;
-}
-
-/* Project Section */
-#project {
-    text-align: center; /* Center text in the project section */
-}
-
-/* Contact Section */
-#contact {
-    text-align: center; /* Center text in the contact section */
-}
-
-.contact-info {
-    margin: 20px;
-}
-
-.social-icons {
-    margin: 10px;
-}
-
-.profile-image {
-    margin: 20px;
-}
-
-/* Media queries for responsive design */
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
+/* Media queries for responsiveness */
+/* For smartphones */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    #personal-ethos p {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    h1 {
         margin-top: 10%;
     }
+}
 
-    .skill {
-        flex-direction: column; /* Stack skills vertically on smaller screens */
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    nav ul li {
+        margin-right: 10px;
     }
+}
 
-    .school-image {
-        height: 100px; /* Adjust the height of the school image for smaller screens */
+/* For computers */
+@media only screen and (min-width: 1025px) {
+    body {
+        padding-bottom: 50px; /* Adjust footer position */
     }
 }
